@@ -1,0 +1,14 @@
+{
+  "name": "rating-service",
+  "version": "1.0.0",
+  "description": "rating-service",
+  "main": "main.js",
+  "scripts": {
+    "start:rating": "node main.js"
+  },
+  "author": "rizkypanz16",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

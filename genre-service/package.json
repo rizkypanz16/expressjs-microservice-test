@@ -1,0 +1,14 @@
+{
+  "name": "genre-service",
+  "version": "1.0.0",
+  "description": "genre-service",
+  "main": "main.js",
+  "scripts": {
+    "start:genre": "node main.js"
+  },
+  "author": "rizkypanz16",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "film-service",
+  "version": "1.0.0",
+  "description": "film-service",
+  "main": "main.js",
+  "scripts": {
+    "start:film": "node main.js"
+  },
+  "author": "rizkypanz16",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
