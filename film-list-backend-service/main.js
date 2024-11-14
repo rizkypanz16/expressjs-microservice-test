@@ -1,13 +1,14 @@
+require('dotenv').config();
 const cors = require('cors');
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const port = 5000;
+const port = process.env.APP_PORT || 5000;
 
 // URLs of the other microservices
-const filmServiceUrl = 'http://localhost:5001/films';
-const genreServiceUrl = 'http://localhost:5002/genres';
-const ratingServiceUrl = 'http://localhost:5003/ratings';
+const filmServiceUrl = process.env.APP_FILM_SERVICE_URL || 'http://localhost:5001/films';
+const genreServiceUrl = process.env.APP_GENRE_SERVICE_URL || 'http://localhost:5002/genres';
+const ratingServiceUrl = process.env.APP_RATING_SERVICE_URL || 'http://localhost:5003/ratings';
 
 // Enable CORS for all origins
 app.use(cors());
