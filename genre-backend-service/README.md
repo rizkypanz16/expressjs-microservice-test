@@ -1,4 +1,4 @@
-# film-backend-service
+# genre-backend-service
 
 ## run node app
 `npm run start:film`

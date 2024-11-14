@@ -1,6 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const port = 5003;
+const port = process.env.APP_PORT || 5003;
 
 // Simulated in-memory data
 let ratings = [

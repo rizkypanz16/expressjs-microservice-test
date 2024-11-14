@@ -1,4 +1,4 @@
-# film-backend-service
+# film-list-backend-service
 
 ## run node app
 `npm run start:film`
@@ -7,7 +7,7 @@
 `docker build -t film-list-backend-service:latest .`
 
 ## run docker container
-`docker run -itd -e APP_FILM_SERVICE_URL=http://film-backend-service:5001/films -e APP_GENRE_SERVICE_URL=http://genre-backend-service:5002/genres --name film-list-backend-service --network film-microservice -p 5000:5000 film-list-backend-service:latest`
+`docker run -itd -e APP_FILM_SERVICE_URL=http://film-backend-service:5001/films -e APP_GENRE_SERVICE_URL=http://genre-backend-service:5002/genres -e APP_RATING_SERVICE_URL=http://rating-backend-service:5003/ratings --name film-list-backend-service --network film-microservice -p 5000:5000 film-list-backend-service:latest`
 
 ## delete docker container
 `docker rm -f film-list-backend-service`
