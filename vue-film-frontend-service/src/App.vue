@@ -42,7 +42,11 @@ export default {
         this.films = response.data;
       } catch (error) {
         console.error('There was an error fetching the data:', error);
+        this.showErrorPopup(); // Show the error popup if there's an issue
       }
+    },
+    showErrorPopup() {
+      alert('Failed to fetch the film list. Please try again later.');
     },
   },
 };
