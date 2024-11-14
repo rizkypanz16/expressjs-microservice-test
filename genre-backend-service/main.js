@@ -1,6 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const port = 5002;
+const port = process.env.APP_PORT || 5002;
 
 // Simulated in-memory data
 let genres = [
