@@ -15,11 +15,11 @@ app.use(cors());
 
 // main url
 app.get('/', (req, res) => {
-  res.json({code: 200, status: "SUCCESS", data: {app_name: "film-microservices", app_version: "1.0.0"}});
+  res.json({code: 200, status: "SUCCESS", data: {app_name: "film-list-microservices", app_version: "1.0.0"}});
 });
 
 app.get('/api', (req, res) => {
-  res.json({code: 200, status: "SUCCESS", data: {app_name: "film-microservices", app_version: "1.0.0"}});
+  res.json({code: 200, status: "SUCCESS", data: {app_name: "film-list-microservices", app_version: "1.0.0"}});
 });
 
 
