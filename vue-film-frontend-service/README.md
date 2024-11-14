@@ -1,24 +1,16 @@
 # vue-film-frontend-service
 
-## Project setup
-```
-npm install
-```
+## run node app
+`npm run serve --host 0.0.0.0`
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## build docker image
+`docker build -t vue-film-frontend-service .`
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## create docker network
+`docker network create film-microservice`
 
-### Lints and fixes files
-```
-npm run lint
-```
+## run docker container
+`docker run -itd -p 80:80 --name vue-film-frontend-service --network film-microservice vue-film-frontend-service:latest`
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## delete docker container
+`docker rm -f vue-film-frontend-service`
