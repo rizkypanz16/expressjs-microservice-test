@@ -1,3 +1,4 @@
+const cors = require('cors');
 const express = require('express');
 const axios = require('axios');
 const app = express();
@@ -7,6 +8,9 @@ const port = 5000;
 const filmServiceUrl = 'http://localhost:5001/films';
 const genreServiceUrl = 'http://localhost:5002/genres';
 const ratingServiceUrl = 'http://localhost:5003/ratings';
+
+// Enable CORS for all origins
+app.use(cors());
 
 // main url
 app.get('/', (req, res) => {

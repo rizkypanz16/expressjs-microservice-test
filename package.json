@@ -4,11 +4,12 @@
   "description": "film-microservices",
   "main": "main.js",
   "scripts": {
-    "start:film": "node film-service/main.js",
-    "start:genre": "node genre-service/main.js",
-    "start:rating": "node rating-service/main.js",
-    "start:film-list": "node film-list-service/main.js",
-    "start:all": "concurrently \"npm run start:film\" \"npm run start:genre\" \"npm run start:rating\" \"npm run start:film-list\""
+    "start:film": "node film-backend-service/main.js",
+    "start:genre": "node genre-backend-service/main.js",
+    "start:rating": "node rating-backend-service/main.js",
+    "start:film-list": "node film-list-backend-service/main.js",
+    "start:film-frontend": "npm run serve --prefix vue-film-frontend-service/",
+    "start:all": "concurrently \"npm run start:film\" \"npm run start:genre\" \"npm run start:rating\" \"npm run start:film-list\" \"npm run start:film-frontend\""
   },
   "author": "rizkypanz16",
   "license": "ISC",
