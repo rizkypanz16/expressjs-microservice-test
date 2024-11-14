@@ -5,8 +5,8 @@ COPY package.json /app
 RUN npm install
 COPY . /app
 
-HEALTHCHECK --interval=30s --timeout=3s \
-  CMD curl -f http://localhost:5000/ || exit 1
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
+  CMD curl --silent --fail http://localhost:5002/ || exit 1
 
 EXPOSE 5000
 
