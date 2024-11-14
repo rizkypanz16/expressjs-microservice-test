@@ -1,0 +1,15 @@
+{
+  "name": "film-list-service",
+  "version": "1.0.0",
+  "description": "film-list-service",
+  "main": "main.js",
+  "scripts": {
+    "start:film-list": "node main.js"
+  },
+  "author": "rizkypanz16",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "express": "^4.21.1"
+  }
+}
